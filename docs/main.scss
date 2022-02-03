@@ -7,18 +7,23 @@ body {
     size: 16px;
     weight: 300;
   }
+  background-color: $color-1;
+}
+main {
   width: 90%;
-  border: 1px solid black;
   margin: auto;
   max-width: 375px;
   padding: 1em;
   box-sizing: border-box;
   color: white;
-  background-color: $color-1;
 }
 
 nav {
   text-align: center;
+  background-color: white;
+  color: $color-1;
+  height: 60px;
+  padding: 0.001em 1em 0 1em;
   p {
     font-weight: 600;
     font-size: 1.3rem;
@@ -28,13 +33,18 @@ nav {
     li {
       text-decoration: none;
       a {
-          color: white;
+        color: $color-1;
+        text-decoration: none;
+      }
+      a:hover {
+        border-bottom: 1px solid $color-1;
       }
     }
   }
 }
 
 .skills {
+  margin-top: 3em;
   .glass {
     width: 90%;
     margin: auto;
@@ -55,25 +65,26 @@ nav {
 }
 
 .projects {
+  width: 90%;
+  margin: auto;
+  border: 1px solid $color-2;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.15)
+  );
+  border-radius: 15px;
+  padding: 1em;
+  margin-top: 3em;
   h1 {
     text-align: center;
   }
   .proj {
-    width: 90%;
-    margin: auto;
-    border: 1px solid $color-2;
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.15)
-    );
-    border-radius: 15px;
-    padding: 1em;
     .project-links {
       display: flex;
       justify-content: space-between;
       a {
-          color: white;
+        color: white;
       }
     }
   }
@@ -108,16 +119,43 @@ nav {
   border-radius: 15px;
   padding: 1em;
   margin-top: 3em;
-  color: white;
-  display: flex;
-  gap: 2em;
-  a {
+  #contacts {
+    margin: auto;
+    color: white;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    a {
       color: white;
+      text-decoration: none;
+    }
+    a:hover {
+        color: orangered;
+    }
   }
 }
 
 /* Medis Query */
-@media (min-width: 675px){
-    
-}
+@media (min-width: 675px) {
+  main {
+    max-width: 1440px;
+  }
+  nav {
+    text-align: justify;
 
+    .author {
+      order: 2;
+    }
+    .nav-items {
+      float: right;
+      order: 1;
+      position: relative;
+      top: -70px;
+      ul {
+        display: flex;
+        gap: 1.5em;
+        float: inherit;
+      }
+    }
+  }
+}
