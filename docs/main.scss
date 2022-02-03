@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap");
+@import "config";
+
+body {
+    font: {
+        family: 'Poppins', sans-serif;
+        size: 16px;
+        weight: 300;
+    }
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    min-width: 375px;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    background-color: $color-1;
+}
+
+nav {
+    text-align: center;
+    p {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    ul {
+        list-style: none;
+        li {
+            text-decoration: none;
+        }
+    }
+}
+
+.skills {
+    .glass {
+        width: 90%;
+        margin: auto;
+        border: 1px solid $color-2;
+        background-image: linear-gradient(to bottom right, rgba(255,255,255, 0), rgba(255,255,255, 0.15));
+        border-radius: 15px;
+        h1 {
+            text-align: center;
+        }
+        ul {
+            margin: 3em 5em;
+        }
+    }
+}
+
+.projects {
+    h1 {
+        text-align: center;
+    }
+    .proj {
+        width: 90%;
+        margin: auto;
+        border: 1px solid $color-2;
+        background-image: linear-gradient(to bottom right, rgba(255,255,255, 0), rgba(255,255,255, 0.15));
+        border-radius: 15px;
+        padding: 1em;
+        .project-links {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.about-me {
+    width: 90%;
+    margin: auto;
+    border: 1px solid $color-2;
+    background-image: linear-gradient(to bottom right, rgba(255,255,255, 0), rgba(255,255,255, 0.15));
+    border-radius: 15px;
+    padding: 1em;
+    margin-top: 3em;
+    h1 {
+        text-align: center;
+    }
+}

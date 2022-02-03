@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 90%;
+  border: 1px solid black;
+  margin: auto;
+  min-width: 375px;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  background-color: #1A374D;
+}
+
+nav {
+  text-align: center;
+}
+
+nav p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  text-decoration: none;
+}
+
+.skills .glass {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #406882;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.15)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+  border-radius: 15px;
+}
+
+.skills .glass h1 {
+  text-align: center;
+}
+
+.skills .glass ul {
+  margin: 3em 5em;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.projects .proj {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #406882;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.15)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.projects .proj .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #406882;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.15)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
+  border-radius: 15px;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+.about-me h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
