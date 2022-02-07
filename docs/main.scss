@@ -20,18 +20,22 @@ main {
 
 nav {
   text-align: center;
-  background-color: white;
   color: $color-1;
-  height: 60px;
   padding: 0.001em 1em 0 1em;
   p {
     font-weight: 600;
     font-size: 1.3rem;
+    background-color: white;
   }
   ul {
     list-style: none;
     li {
-      text-decoration: none;
+      margin: 0 auto 0.5em auto;
+      width: 30%;
+      background-color: white;
+      text-align: center;
+      height: 30px;
+      border-radius: 3px;
       a {
         color: $color-1;
         text-decoration: none;
@@ -64,7 +68,7 @@ nav {
   }
 }
 
-.projects {
+.my-projects {
   width: 90%;
   margin: auto;
   border: 1px solid $color-2;
@@ -79,12 +83,27 @@ nav {
   h1 {
     text-align: center;
   }
-  .proj {
-    .project-links {
-      display: flex;
-      justify-content: space-between;
-      a {
-        color: white;
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    .proj {
+      width: 70%;
+      border: 2px solid $color-2;
+      margin-bottom: 2em;
+      padding: 20px;
+      box-sizing: border-box;
+      img {
+        width: 98%;
+        height: fit-content;
+      }
+      .project-links {
+        display: flex;
+        justify-content: space-between;
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -130,7 +149,7 @@ nav {
       text-decoration: none;
     }
     a:hover {
-        color: orangered;
+      color: orangered;
     }
   }
 }
@@ -141,20 +160,17 @@ nav {
     max-width: 1440px;
   }
   nav {
-    text-align: justify;
-
-    .author {
-      order: 2;
-    }
-    .nav-items {
-      float: right;
-      order: 1;
-      position: relative;
-      top: -70px;
-      ul {
-        display: flex;
-        gap: 1.5em;
-        float: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    ul {
+      width: 50%;
+      display: flex;
+      gap: 15px;
+      justify-content: end;
+      li {
+        margin: 0;
       }
     }
   }

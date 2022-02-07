@@ -18,15 +18,14 @@ main {
 
 nav {
   text-align: center;
-  background-color: white;
   color: #1A374D;
-  height: 60px;
   padding: 0.001em 1em 0 1em;
 }
 
 nav p {
   font-weight: 600;
   font-size: 1.3rem;
+  background-color: white;
 }
 
 nav ul {
@@ -34,7 +33,12 @@ nav ul {
 }
 
 nav ul li {
-  text-decoration: none;
+  margin: 0 auto 0.5em auto;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  height: 30px;
+  border-radius: 3px;
 }
 
 nav ul li a {
@@ -67,7 +71,7 @@ nav ul li a:hover {
   margin: 3em 5em;
 }
 
-.projects {
+.my-projects {
   width: 90%;
   margin: auto;
   border: 1px solid #406882;
@@ -78,11 +82,40 @@ nav ul li a:hover {
   margin-top: 3em;
 }
 
-.projects h1 {
+.my-projects h1 {
   text-align: center;
 }
 
-.projects .proj .project-links {
+.my-projects .projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-projects .projects .proj {
+  width: 70%;
+  border: 2px solid #406882;
+  margin-bottom: 2em;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.my-projects .projects .proj img {
+  width: 98%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.my-projects .projects .proj .project-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +124,7 @@ nav ul li a:hover {
           justify-content: space-between;
 }
 
-.projects .proj .project-links a {
+.my-projects .projects .proj .project-links a {
   color: white;
 }
 
@@ -148,27 +181,29 @@ nav ul li a:hover {
     max-width: 1440px;
   }
   nav {
-    text-align: justify;
-  }
-  nav .author {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  nav .nav-items {
-    float: right;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    position: relative;
-    top: -70px;
-  }
-  nav .nav-items ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1.5em;
-    float: inherit;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+  }
+  nav ul {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  nav ul li {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
