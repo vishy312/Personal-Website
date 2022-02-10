@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   background-color: #1A374D;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -54,16 +55,16 @@ nav .index {
   transition: 0.5s ease-in-out;
 }
 
-nav .index li {
+nav .index a {
+  text-decoration: none;
+}
+
+nav .index a li {
   background-color: white;
   height: 30px;
   padding-left: 1em;
   border: 0.1px solid #1A374D;
-}
-
-nav .index li a {
   color: #1A374D;
-  text-decoration: none;
 }
 
 nav .show-index {
@@ -234,12 +235,12 @@ nav .show-index {
         -ms-flex-pack: end;
             justify-content: end;
   }
-  nav .index li {
+  nav .index a li {
     margin: 0;
     background-color: transparent;
     border: 0.1px solid transparent;
   }
-  nav .index li:hover {
+  nav .index a li:hover {
     border-bottom: 1px solid #1A374D;
   }
   .projects {
@@ -262,28 +263,15 @@ nav .show-index {
   }
 }
 
-@-webkit-keyframes translate-li {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 1em;
-  }
-}
-
-@keyframes translate-li {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 1em;
-  }
-}
-
 @media (max-width: 675px) {
-  .index li:hover {
-    -webkit-animation: translate-li 1s ease 0 0 normal;
-            animation: translate-li 1s ease 0 0 normal;
+  nav .index a li:hover {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    background-color: #6998AB;
+    color: white;
+    font-weight: bolder;
   }
 }
 /*# sourceMappingURL=main.css.map */

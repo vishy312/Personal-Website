@@ -8,6 +8,7 @@ body {
     weight: 300;
   }
   background-color: $color-1;
+  scroll-behavior: smooth;
 }
 main {
   width: 90%;
@@ -30,7 +31,6 @@ nav {
       font-weight: 600;
       font-size: 1.3rem;
     }
-
     .toggle:hover {
       transform: rotate(90deg);
       transition: 0.4s ease-in-out;
@@ -41,16 +41,14 @@ nav {
     height: 0;
     overflow: hidden;
     transition: 0.5s ease-in-out;
-    li {
-      background-color: white;
-      height: 30px;
-      padding-left: 1em;
-      border: 0.1px solid $color-1;
-      a {
+    a{
+      text-decoration: none;
+      li {
+        background-color: white;
+        height: 30px;
+        padding-left: 1em;
+        border: 0.1px solid $color-1;
         color: $color-1;
-        text-decoration: none;
-      }
-      a:hover {
       }
     }
   }
@@ -200,13 +198,15 @@ nav {
       align-items: center;
       gap: 15px;
       justify-content: end;
-      li {
-        margin: 0;
-        background-color: transparent;
-        border: 0.1px solid transparent;
-      }
-      li:hover {
-        border-bottom: 1px solid $color-1;
+      a {
+        li {
+          margin: 0;
+          background-color: transparent;
+          border: 0.1px solid transparent;
+        }
+        li:hover {
+          border-bottom: 1px solid $color-1;
+        }
       }
     }
   }
@@ -224,14 +224,18 @@ nav {
   }
 }
 
-@keyframes  translate-li{
-  0% { margin-left: 0;}
-  100%{ margin-left: 1em;}
-}
-@media (max-width:675px){
-  .index {
-    li:hover{
-      animation: translate-li 1s ease 0 0 normal;
+@media (max-width: 675px) {
+  nav {
+    .index {
+      a {
+        li:hover {
+          transform: translateX(-20px);
+          transition: 0.5s ease;
+          background-color: $color-3;
+          color: white;
+          font-weight: bolder;
+        }
+      }
     }
   }
 }

@@ -17,14 +17,14 @@
             </button>
         </div>
         <ul class="index">
-            <li><a href="#">My Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contacts</a></li>
+            <a href="#about"><li>About Me</li></a>
+            <a href="#skills"><li>My Skills</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contacts"><li>Contacts</li></a>
         </ul>
     </nav>
     <main>
-        <div class="about-me">
+        <div class="about-me" id="about">
             <h1>About Me</h1>
             <ul>
                 <li>I write Blogs</li>
@@ -34,10 +34,11 @@
                 <li>Curious</li>
             </ul>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="glass">
                 <h1>My Skills</h1>
                 <ul>
+                    <li>HTML</li>
                     <li>CSS</li>
                     <li>SCSS</li>
                     <li>JavaScript</li>
@@ -45,7 +46,7 @@
                     <li>Django</li>
                 </ul>
             </div>
-            <div class="my-projects">
+            <div class="my-projects" id="projects">
                 <h1>Projects</h1>
                 <div class="projects">
                     <div class="proj">
@@ -106,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <div id="contacts">
                     <a href="mailto:palvishal312@gmail.com"><img src="icons/at-solid.svg" class="email-icon"></a>
                     <a href="https://github.com/vishy312"><img src="icons/github-brands.svg" class="github-icon"></a>
